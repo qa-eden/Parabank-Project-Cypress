@@ -6,7 +6,7 @@ describe("Authentication", ()=>{
     let userdata;
 
     beforeEach("Launch Website",()=>{
-        cy.visit("https://parabank.parasoft.com/parabank/index.htm")
+        cy.visit("/parabank/index.htm")
         
         cy.fixture("parabank")
         .then((data)=>{
