@@ -22,30 +22,30 @@ A portfolio-grade test automation framework built with Cypress, testing the
 ---
 
 ## 🏗️ Project Structure
-parabank-cypress-e2e/
-├── cypress/
-│   ├── e2e/                        # Test suites
-│   │   ├── auth/                   # TC_Auth_001–009
-│   │   ├── accounts/               # TC_Acc_001–005
-│   │   ├── transfers/              # TC_Trans_001–004
-│   │   ├── bill-pay/               # TC_Bill_001–005
-│   │   └── loans/                  # TC_Loan_001–005
-│   ├── pages/                      # Page Object Model classes
-│   │   ├── BasePage.js
-│   │   ├── LoginPage.js
-│   │   ├── AccountsPage.js
-│   │   ├── TransferPage.js
-│   │   ├── BillPayPage.js
-│   │   └── LoanPage.js
-│   ├── fixtures/                   # Test data (JSON)
-│   │   └── parabank.json
-│   └── support/
-│       ├── e2e.js                  # Global support entry point
-│       └── commands.js             # Custom Cypress commands
-├── cypress.config.js               # Cypress configuration
-├── package.json
-└── .gitignore
 
+    parabank-cypress-e2e/
+    ├── cypress/
+    │   ├── e2e/
+    │   │   ├── auth/                   # TC_Auth_001–009
+    │   │   ├── accounts/               # TC_Acc_001–005
+    │   │   ├── transfers/              # TC_Trans_001–004
+    │   │   ├── bill-pay/               # TC_Bill_001–005
+    │   │   └── loans/                  # TC_Loan_001–005
+    │   ├── pages/
+    │   │   ├── BasePage.js
+    │   │   ├── LoginPage.js
+    │   │   ├── AccountsPage.js
+    │   │   ├── TransferPage.js
+    │   │   ├── BillPayPage.js
+    │   │   └── LoanPage.js
+    │   ├── fixtures/
+    │   │   └── parabank.json
+    │   └── support/
+    │       ├── e2e.js
+    │       └── commands.js
+    ├── cypress.config.js
+    ├── package.json
+    └── .gitignore
 
 ---
 
