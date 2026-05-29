@@ -10,7 +10,14 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+Cypress.Commands.add('login', (username, password) => {
+//   cy.visit('/parabank/index.htm')
+  cy.get('input[name="username"]').type(username)
+  cy.get('input[name="password"]').type(password)
+  cy.get("input[value='Log In']").click()
+  cy.get("div[id='showOverview'] h1[class='title']").should('contain', 'Accounts Overview')
+})
+
 //
 //
 // -- This is a child command --

@@ -1,8 +1,0 @@
-{
-    "username":"TestedEden",
-    "password":"Tester123",
-    "expected":"Error!",
-    "emptyusername": "",
-    "emptypassword": "",
-    "emptyExpected": "Please enter a username and password."
-}

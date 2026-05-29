@@ -18,11 +18,11 @@ class Login{
 
     validatemsg(validation)
     {
-        cy.get(".title")
+        cy.get("div[id='leftPanel'] h2")
         .should('have.text',validation)
     }
 
-    validateEmptymsg(validation)
+    validateErrormsg(validation)
     {
         cy.get(".error")
         .should('have.text',validation)

@@ -1,8 +1,38 @@
 {
-    "username":"TestedEden",
-    "password":"Tester123",
-    "expected":"Error!",
-    "emptyusername": "",
-    "emptypassword": "",
-    "emptyExpected": "Please enter a username and password."
+  "username": "john",
+  "password": "demo",
+  "expectedMsg": "Accounts Overview",
+
+  "invalidUsername": "unknownuser",
+  "invalidPassword": "wrongpassword",
+  "invalidExpectedMsg": "The username and password could not be verified.",
+
+  "emptyUsername": "",
+  "emptyPassword": "",
+  "emptyExpectedMsg": "Please enter a username and password",
+
+  
+  "firstName": "Test",
+  "lastName": "User",
+  "address": "123 Test Street",
+  "city": "Lagos",
+  "state": "Lagos",
+  "zipCode": "100001",
+  "phone": "08000000001",
+  "ssn": "123-45-6789",
+  "new_username": "testuser_001",    
+  "new_password": "Test@1234",
+  "confirmPassword": "Test@1234",
+
+  "exist_username": "john",
+  "exist_password": "Test@1234",
+  "exist_confirmPassword": "Test@1234",
+  
+  "miss_password": "Test@1234",
+  "miss_confirmPassword": "Test@5678",
+
+  "registerSuccessMsg": "Your account was created successfully. You are now logged in.",
+  "existingUserMsg": "This username already exists.",
+  "mismatchedPassMsg": "Passwords did not match.",
+  "emptyFieldsMsg": "First name is required."
 }
