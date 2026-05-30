@@ -35,7 +35,7 @@ describe("Registration Module", ()=>{
         Reg.clickRegister(userdata.registerSuccessMsg)
     })
 
-    it.only("Registration with existing Username",()=>{
+    it("TC_Auth_006 Registration with existing Username",()=>{
         Reg.setfname(randomString)
         Reg.setlname(randomString)
         Reg.setAddress(randomString)
@@ -55,6 +55,58 @@ describe("Registration Module", ()=>{
 
     })
 
+    it("TC_Auth_007 Registerwith Mismatched Password", ()=>{
+        Reg.setfname(randomString)
+        Reg.setlname(randomString)
+        Reg.setAddress(randomString)
+        Reg.setCity(userdata.city)
+        Reg.setState(userdata.state)
+        Reg.setZipCode(userdata.zipCode)
+        Reg.setPhoneNumber(phoneNumber)
+        Reg.setSSN(userdata.ssn)
+        Reg.setUserName(userdata.new_username)
+        Reg.setPassword(userdata.new_password)
+        Reg.setconfPassword(randomString)
+        Reg.clickRegister()
 
+        cy.get("span[id='repeatedPassword.errors']")
+        .should('contain', "Passwords did not match.")
+
+    })
+
+    it("TC_Auth_008 Registration with Empty Required Field",()=>{
+        Reg.setfname(userdata.EmptyfirstName)
+        Reg.setlname(userdata.EmptylastName)
+        Reg.setAddress(userdata.Emptyaddress)
+        Reg.setCity(userdata.Emptycity)
+        Reg.setState(userdata.Emptystate)
+        Reg.setZipCode(userdata.EmptyzipCode)
+        Reg.setPhoneNumber(userdata.Emptyphone)
+        Reg.setSSN(userdata.Emptyssn)
+        Reg.setUserName(userdata.Emptynew_username)
+        Reg.setPassword(userdata.Emptynew_password)
+        Reg.setconfPassword(userdata.EmptyconfirmPassword)
+        Reg.clickRegister(userdata.EmptyregisterSuccessMsg)
+        Reg.validateEmptyFieldError(userdata.emptyFieldsMsg)
+
+    })
+
+    it("TC_Auth_009 Successful Logout", ()=>{
+        Reg.setfname(randomString)
+        Reg.setlname(randomString)
+        Reg.setAddress(randomString)
+        Reg.setCity(userdata.city)
+        Reg.setState(userdata.state)
+        Reg.setZipCode(userdata.zipCode)
+        Reg.setPhoneNumber(phoneNumber)
+        Reg.setSSN(userdata.ssn)
+        Reg.setUserName(randomString)
+        Reg.setPassword(userdata.new_password)
+        Reg.setconfPassword(userdata.new_password)
+        Reg.clickRegister()
+        Reg.validateRegister(userdata.registerSuccessMsg)
+        Reg.clickLogOut()
+        Reg.validateLogout(userdata.logoutConfirmation)
+    })
 
 })

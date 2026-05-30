@@ -24,6 +24,22 @@
   "new_password": "Test@1234",
   "confirmPassword": "Test@1234",
 
+
+  "EmptyfirstName": "",
+  "EmptylastName": "",
+  "Emptyaddress": "",
+  "Emptycity": "",
+  "Emptystate": "",
+  "EmptyzipCode": "",
+  "Emptyphone": "",
+  "Emptyssn": "",
+  "Emptynew_username": "",    
+  "Emptynew_password": "",
+  "EmptyconfirmPassword": "",
+
+
+
+
   "exist_username": "john",
   "exist_password": "Test@1234",
   "exist_confirmPassword": "Test@1234",
@@ -34,5 +50,7 @@
   "registerSuccessMsg": "Your account was created successfully. You are now logged in.",
   "existingUserMsg": "This username already exists.",
   "mismatchedPassMsg": "Passwords did not match.",
-  "emptyFieldsMsg": "First name is required."
+  "emptyFieldsMsg": "First name is required.",
+
+  "logoutConfirmation":"Customer Login"
 }
