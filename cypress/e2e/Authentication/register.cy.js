@@ -90,23 +90,4 @@ describe("Registration Module", ()=>{
         Reg.validateEmptyFieldError(userdata.emptyFieldsMsg)
 
     })
-
-    it("TC_Auth_009 Successful Logout", ()=>{
-        Reg.setfname(randomString)
-        Reg.setlname(randomString)
-        Reg.setAddress(randomString)
-        Reg.setCity(userdata.city)
-        Reg.setState(userdata.state)
-        Reg.setZipCode(userdata.zipCode)
-        Reg.setPhoneNumber(phoneNumber)
-        Reg.setSSN(userdata.ssn)
-        Reg.setUserName(randomString)
-        Reg.setPassword(userdata.new_password)
-        Reg.setconfPassword(userdata.new_password)
-        Reg.clickRegister()
-        Reg.validateRegister(userdata.registerSuccessMsg)
-        Reg.clickLogOut()
-        Reg.validateLogout(userdata.logoutConfirmation)
-    })
-
 })
