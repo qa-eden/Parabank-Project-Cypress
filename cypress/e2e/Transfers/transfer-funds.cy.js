@@ -24,7 +24,7 @@ describe("Transfer Funds", ()=>{
         Trf.validateErrorMessage()
     })
 
-    it.only("TC_Trans_003 - Transfer Funds Between Accounts Successfully", ()=>{
+    it("TC_Trans_003 - Verify Transfer Confirmation Message", ()=>{
         Trf.clickTransferFunds() // Click the Transfer Fund
         Trf.inputAmount(50)
         Trf.selectFromAccount()
