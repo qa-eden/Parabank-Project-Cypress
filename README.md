@@ -53,10 +53,10 @@ A portfolio-grade test automation framework built with Cypress, testing the
 
 | Suite | Test Cases | Status |
 |-------|-----------|--------|
-| Authentication | TC_Auth_001 – TC_Auth_009 | 🔄 In Progress |
-| Accounts | TC_Acc_001 – TC_Acc_005 | 📋 Planned |
-| Transfers | TC_Trans_001 – TC_Trans_004 | 📋 Planned |
-| Bill Pay | TC_Bill_001 – TC_Bill_005 | 📋 Planned |
+| Authentication | TC_Auth_001 – TC_Auth_009 | ✅ Done |
+| Accounts | TC_Acc_001 – TC_Acc_005 | ✅ Done |
+| Transfers | TC_Trans_001 – TC_Trans_004 | ✅ Done |
+| Bill Pay | TC_Bill_001 – TC_Bill_005 | ✅ Done |
 | Loans | TC_Loan_001 – TC_Loan_005 | 📋 Planned |
 
 > Test cases are managed as GitHub Issues with labels, milestones, and priorities.
