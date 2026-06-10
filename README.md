@@ -57,7 +57,7 @@ A portfolio-grade test automation framework built with Cypress, testing the
 | Accounts | TC_Acc_001 – TC_Acc_005 | ✅ Done |
 | Transfers | TC_Trans_001 – TC_Trans_004 | ✅ Done |
 | Bill Pay | TC_Bill_001 – TC_Bill_005 | ✅ Done |
-| Loans | TC_Loan_001 – TC_Loan_005 | 📋 Planned |
+| Loans | TC_Loan_001 – TC_Loan_005 | ✅ Done |
 
 > Test cases are managed as GitHub Issues with labels, milestones, and priorities.
 > [View all test cases →](https://github.com/qa-eden/Parabank-Project-Cypress/issues)
