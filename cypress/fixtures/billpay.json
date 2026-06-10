@@ -1,0 +1,23 @@
+{
+    "name": "John Doe",
+    "address": "123 Test Street",
+    "city": "Lagos",
+    "state": "Lagos",
+    "zip": "100001",
+    "phone": "08000000001",
+    "acct": "12345",
+    "errormsg":"Payee name is required.",
+    "amount": "50",
+    "invalidamount":0,
+    "amterrormsg":"Please enter a valid amount.",
+
+    "emptyName":"",
+    "emptyaddress": "",
+    "emptycity": "",
+    "emptystate": "",
+    "emptyzip": "",
+    "emptyphone": "",
+    "emptyacct": "",
+    "emptyerrormsg":"",
+    "emptyamount": ""   
+}

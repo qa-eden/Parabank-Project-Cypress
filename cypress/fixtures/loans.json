@@ -1,0 +1,6 @@
+{
+    "amount":"1000",
+    "invalidAmount":"100000",
+    "downPayment":"100",
+    "invalidDownPayment":"1"
+}
